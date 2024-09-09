@@ -11,4 +11,4 @@ def read_root():
 
 @app.get("/teste")
 def teste_1():
-    return {"Mensagem": "Deu errado"}
+    return {"Mensagem": "Teste 02 para aprender o processo"}
