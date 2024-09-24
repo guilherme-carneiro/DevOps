@@ -16,16 +16,3 @@ jobs:
         uses: advanced-security/python-lint-code-scanning-action@v1.1.1
         with:
           linter: pylint
-
-  DISCORD:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
-
-      - name: Discord Commits
-        uses: Sniddl/discord-commits@v1.6
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          template: "avatar-with-link"
-          include-extras: true
