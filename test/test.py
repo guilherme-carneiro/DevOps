@@ -6,7 +6,7 @@ import pytest_asyncio
 @pytest.mark.asyncio
 async def test_root():
     result = await root()
-    assert root() == {"message": "Hello Word"}
+    assert result == {"message": "Hello World"}
 
 @pytest.mark.asyncio
 async def test_funcaoteste():
